@@ -1,0 +1,105 @@
+* {
+    font-family: open sans-serif;
+}
+
+.container1 {
+    margin-top: 10px;
+    margin-left: -20px;
+    font-family: open sans-serif;
+    font-variant: small-caps;
+    font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 20px;
+    padding: 0 20px;
+    color: black;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    text-decoration: underline brown;
+}
+
+#hr
+{
+    color: black;
+}
+
+.h1
+{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 64px;
+}
+
+.p1
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+}
+
+#h2
+{
+    margin-top: -230px;
+    margin-bottom: 170px;
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
+.slide
+{
+    filter: grayscale(100%);
+    transition: all .6s ease-in-out;
+}
+.slide:hover
+{
+    filter: none;
+    transition: all .6s ease-in-out;
+}
+
+#p2
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 70px;
+}
+
+.a1 {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+    background: transparent;
+    border: none;
+    margin-left: -10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.a1:hover {
+    background: transparent;
+    color: red;
+    transform: translateX(5px);
+}
+
+.p2
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+    margin-top: 20px; 
+}
+
+.div5
+{
+    padding: 1px;
+    font-size: 20px;
+    background-color: black;
+}

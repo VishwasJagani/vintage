@@ -1,0 +1,190 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Heaven</title>
+
+    <!-- Icon Link -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+    <!-- JS File Link -->
+    <!-- <script src="js/index.js"></script> -->
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg rounded" aria-label="Twelfth navbar example">
+            <div class="container1">
+                <div class="collapse navbar-collapse justify-content-md-start" id="navbarsExample10">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="venue.html">Venue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ticket.html">Ticket</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <hr id="hr">
+    <!-- Navbar End -->
+
+    <div class="container">
+        <section class="row pt-1">
+            <div class="col-md-6 col-12">
+                <img src="{% static 'images/red-vehicle-street_417767-545.jpg' %}" id="img1">
+            </div>
+            <div class="card-body col-md-6 col-12 div1">
+                <h1 id="h2">Login</h1>
+                <form id="form1">
+                    <div class="form-group">
+                        <label for="firstname">Email : </label>
+                        <input type="email" class="form-control" placeholder="Email" id="email" style="font-size:20px;">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Password : </label>
+                        <input type="password" class="form-control" placeholder="Password" id="pass"
+                            style="font-size:20px;"><br>
+                    </div>
+                    <input type="submit" name="login" class="btn btn-outline-dark" style="width:100%; font-size: 20px;">
+                </form>
+                <h4 id="h1">If You Don't Have Account Scroll Down</h4>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="row pt-1">
+            <div class="card-body col-md-6 col-12 div2">
+                <h1 id="h2">Register</h1>
+                <form id="form2">
+                    <div class="form-group">
+                        <label for="firstname">First Name : </label>
+                        <input type="text" name="name" class="form-control" placeholder="Name" id="name" style="font-size:20px;">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email : </label>
+                        <input type="email" name="email" class="form-control" placeholder="Email" id="email1" style="font-size:20px;">
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Password : </label>
+                        <input type="password" name="pass" class="form-control" placeholder="Password" id="pass1"
+                            style="font-size:20px;">
+                    </div>
+                    <input type="submit" name="submit" class="btn btn-outline-dark disabled" id="btn" style="width:100%; font-size: 20px;">
+                </form>
+            </div>
+            <div class="col-md-6 col-12">
+                <img src="{% static 'images/many-sports-cars-parked-row-vertical-view_268835-908.jpg' %}" id="img2">
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="div5">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-light">Home</a></li>
+                <li class="nav-item"><a href="venue.html" class="nav-link px-2 text-light">Venue</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-light">About</a></li>
+                <li class="nav-item"><a href="ticket.html" class="nav-link px-2 text-light">Ticket</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link px-2 text-light">Login</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+        </footer>
+    </div>
+    <!-- Footer End -->
+
+    <script>
+
+        $(document).ready(function(){
+            
+            var a = 7;
+
+            $("#form1").submit(function(){
+                var email = $("#email").val();
+                var pass = $("#pass").val();
+
+                if(email == '')
+                {
+                    alert('Please Enter a Valid Email...');
+                    return false;
+                }
+                if(pass == '')
+                {
+                    alert('Please Enter a Valid Password...');
+                    return false;
+                }
+            });
+            $("#form2").submit(function(){
+                var name = $("#name").val();
+                var email = $("#email1").val();
+                var pass = $("#pass1").val();
+            
+                if(name == '')
+                {
+                    alert('Please Enter Your Name...');
+                    return false;
+                }
+                if(email == '')
+                {
+                    alert('Please Enter a Valid Email...');
+                    return false;
+                }
+                if(pass == '')
+                {
+                    alert('Please Enter a Valid Password...');
+                    return false;
+                }
+            });
+            $("#pass1").keypress(function(){
+                $("#txt").text("Min." + a + " Characters Required");
+
+                if(a >= 1){
+                    a--;
+                }
+                else
+                {
+                    $("#txt").remove();
+                }
+            });
+            $("#check").click(function(){
+                if($("#check").is(":checked")){
+                    $("#btn").attr("class" , "btn btn-outline-dark active");
+                }
+                else
+                {
+                    $("#btn").attr("class" , "btn btn-outline-dark disabled");
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

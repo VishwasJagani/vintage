@@ -1,0 +1,182 @@
+* {
+    font-family: open sans-serif;
+}
+
+#myaccount
+{
+    margin-left: 690px;
+}
+
+.d1
+{
+    margin-top:30px;
+    margin-left: 30px;
+}
+
+.container1 {
+    margin-top: 10px;
+    margin-left: -20px;
+    font-family: open sans-serif;
+    font-variant: small-caps;
+    font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 20px;
+    padding: 0 20px;
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    text-decoration: underline brown;
+
+}
+
+#hr
+{
+    color: white;
+}
+
+#img1 {
+    width: 100%;
+    height: 120px;
+    zoom: 6;
+    margin-top: -30px;
+}
+
+#h1 {
+    font-size: 50px;
+    font-family: open sans-serif;
+    font-weight: 900;
+    color: white;
+    margin-top: -150px;
+    text-align: center;
+}
+
+#h2 {
+    margin-top: 150px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.slider {
+    width: 100%;
+    height: 280px;
+    border-radius: 2%;
+    filter: grayscale(100%);
+    transition: all .5s ease;
+}
+
+.slider:hover {
+    filter: none;
+    transition: all .5s ease;
+}
+
+.h5 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.p1 {
+    color: gray;
+    font-size: 18px;
+}
+
+.div1 {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding-top: 40px;
+    margin-bottom: 0px;
+}
+
+.div2 {
+    margin-left: 120px;
+    margin-right: 900px;
+}
+
+.div3 {
+    margin-left: 500px;
+    margin-top: -300px;
+    margin-right: 500px;
+}
+
+.div4 {
+    margin-left: 880px;
+    margin-top: -326px;
+    margin-right: 100px;
+}
+
+.h3 {
+    font-variant: small-caps;
+    font-size: 35px;
+}
+
+.p2 {
+    font-size: 18px;
+    color: gray;
+}
+
+.a1 {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+    background: transparent;
+    border: none;
+    margin-left: -10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.a1:hover {
+    background: transparent;
+    color: red;
+    transform: translateX(5px);
+}
+
+#h4 {
+    text-align: center;
+    margin-top: 70px;
+    font-weight: 200;
+}
+
+.img2
+{
+    width: 1200px;
+    height: 600px;
+}
+.slide
+{
+    filter: grayscale(100%);
+    transition: all .6s ease-in-out;
+}
+.slide:hover
+{
+    filter: none;
+    transition: all .6s ease-in-out;
+}
+
+#h5
+{
+    margin-top: -500px;
+}
+
+.carousel-item
+{
+    margin-bottom: 100px;
+}
+
+.div5
+{
+    padding: 1px;
+    font-size: 20px;
+    background-color: black;
+} 

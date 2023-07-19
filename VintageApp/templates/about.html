@@ -1,0 +1,117 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Heaven</title>
+
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+    <!-- JS File Link -->
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg rounded" aria-label="Twelfth navbar example">
+            <div class="container1">
+                <div class="collapse navbar-collapse justify-content-md-start" id="navbarsExample10">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="venue.html">Venue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ticket.html">Ticket</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <hr id="hr">
+    <!-- Navbar End -->
+
+    <h1 class="h1">About Us</h1>
+    <div class="container">
+        <p class="p1">The Vintage Autohaus was established in 1962 as a community project to promote the history of the
+            automotive industry and to promote tourism in the area. At the time, a number of prominent residents made
+            financial contributions or provided interest-free loans to acquire a former car dealership. It was converted
+            into a facility where antique automobiles and related artifacts could be displayed. The Vintage Autohaus
+            opened in 1963 and was incorporated in October 1964 as a charitable, not-for-profit institution.</p>
+    </div>
+    <div class="slide">
+        <img src="{% static 'images/about-1.jpg' %}" width="100%" height="400px">
+        <h1 id="h2">Over 50,000 square feet of Exhibit Space</h1>
+    </div>
+    <div class="container">
+        <p id="p2">Today the Vintage Autohaus continues to maintain the nearly century-old former car dealership building at
+            99 Simcoe St. South. The main floor holds the majority of vehicles, while the second floor tells the story of
+            automotive journey throughout the World. A gift shop and reference library compliment the automobiles and the
+            adjoining lot hosts drive-ins and car shows.</p>
+        
+        <h1 class="h1">Accessible to Everyone</h1>
+    </div>
+
+    <img src="{% static 'images/about-2.jpg' %}" class="slide" width="100%" height="500px">
+    <div class="container">
+        <p class="p1">Today the Vintage Autohaus continues to maintain the nearly century-old former car dealership
+            building at 99 Simcoe St. South. The main floor holds the majority of vehicles, while the second floor tells
+            the story of automotive journey throughout the World. A gift shop and reference library compliment the
+            automobiles and the adjoining lot hosts drive-ins and car shows.</p>
+        <h4 style="font-weight:600;margin-top: 20px;">Accessible Parking</h4>
+        <p class="p1">Guests may be dropped off at the entrance on the first floor. Accessible parking spots (19) are
+            only located on the first floor of the parking garage (P1), close to the main entrance. There are no
+            accessible parking spaces on the second, third, or fourth levels. The second, third, and fourth levels of
+            the parking garage are not serviced by elevators.</p>
+        <a href="#" class="a1 btn">Learn More →</a>
+    </div>
+    <img src="{% static 'images/about-3.jpg' %}" class="slide" width="100%" height="500px">
+
+    <!-- Footer Start -->
+    <div class="div5">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-light">Home</a></li>
+                <li class="nav-item"><a href="venue.html" class="nav-link px-2 text-light">Venue</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-light">About</a></li>
+                <li class="nav-item"><a href="ticket.html" class="nav-link px-2 text-light">Ticket</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link px-2 text-light">Login</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+        </footer>
+    </div>
+    <!-- Footer End -->
+
+    <!-- <script>
+        function loadDoc() {
+            var a = new XMLHttpRequest();
+            a.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+            }
+            a.open("GET", "textfile/ajax_info.txt", true);
+            a.send();
+        }
+    </script> -->
+
+</body>
+
+</html>

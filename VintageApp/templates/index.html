@@ -1,0 +1,249 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heaven</title>
+
+    <!-- Icon Link -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- JS File Link -->
+    <script src="{% static  'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static  'js/bootstrap.bundle.js' %}"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg rounded" aria-label="Twelfth navbar example">
+            <div class="container1">
+                <div class="collapse navbar-collapse justify-content-md-start" id="navbarsExample10">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="venue.html">Venue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ticket.html">Ticket</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item" id="myaccount">
+                            <div class="d-inline-flex align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-light dropdown-toggle"
+                                        data-toggle="dropdown">My Account</button>
+                                    <div class="dropdown-menu dropdown-menu-right d1">
+                                        <button class="dropdown-item" type="button">Login</button>
+                                        <button class="dropdown-item" type="button">Register</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <hr id="hr">
+    <!-- Navbar End -->
+
+    <!-- Featured Start-->
+    <div>
+        <img src="{% static 'images/image2.jpg' %}" id="img1">
+        <h1 id="h1">Vintage Autohaus</h1>
+    </div>
+    <div class="container">
+        <h1 id="h2">Featured Cars</h1>
+        <section class="row pt-2">
+            <div class="col-md-4 col-12">
+                <img src="{% static 'images/image3.jpg' %}" class="slider">
+                <h5 class="h5">Chevrolet Chevelle SS</h5>
+                <p class="p1">454 cubic inches V8, 450hp, back in the 70s, was an insane amount of power. See the pure
+                    American MOPAR goodness in this gorgeously preserved Chevy Chevelle SS, from the goodies of the SS
+                    package to the deafening sound of the big-block V8.</p>
+            </div>
+            <div class="col-md-4 col-12">
+                <img src="{% static 'images/image4.jpg' %}" class="slider">
+                <h5 class="h5">Porsche 356A Speedster</h5>
+                <p class="p1">Feel the true roots of the legendary automative brand Porsche, with the 356A Speedster.
+                    Made in the 1950s, this car features a timeless design that shaped Porsche for years to come.
+                    Experience this 356A in all its glory at Vintage Autohaus.</p>
+            </div>
+            <div class="col-md-4 col-12">
+                <img src="{% static 'images/image5.jpg' %}" class="slider">
+                <h5 class="h5">Mercedes-Benz 190SL</h5>
+                <p class="p1">One of the most beautiful cars ever made, the Mercedes-Benz 190SL is the queen of the
+                    1950s. It is one of the rarest, most sought-after Mercedes models. Experience one in pristine
+                    condition with an optional ride-in package today.</p>
+            </div>
+        </section>
+        <section class="row pt-2">
+            <div class="col-md-4 col-12">
+                <img src="{% static 'images/image6.jpg' %}" class="slider">
+                <h5 class="h5">Shelby AC Cobra 427</h5>
+                <p class="p1">One of the rarest cars on the floor, the Shelby Cobra 427 was the pride and joy of the
+                    legendary racer Carrol Shelby. A 7-liter V8 and lightweight chassis propel this car from 0-60 in 3.4
+                    seconds, that makes it the fastest cars of its time.</p>
+            </div>
+            <div class="col-md-4 col-12">
+                <img src="{% static 'images/image7.jpg' %}" class="slider">
+                <h5 class="h5">Audi S1 Sport Quattro</h5>
+                <p class="p1">Picture this: It's 1985. You're Audi. You want to win Group-B Rally. What do you do? You
+                    make a 4WD, 500HP monster. This is the Audi S1. This car shaped Audi for the future, with the
+                    remarkable Quattro drive system. A piece of history, right here, at the Vintage Autohaus.</p>
+            </div>
+            <div class="col-md-4 col-12">
+                <img src="{% static 'images/image8.jpg' %}" class="slider">
+                <h5 class="h5">Ferrari Dino 246 GT</h5>
+                <p class="p1">One of the very rare Ferraris with a V6, the Dino 246 GT featured groundbreaking design.
+                    It is the first "mass-produced" Ferraris, with a distinct design and driving experience, with the
+                    synchronized 5-speed manual transmission. Seeing is believing with this one, for sure.</p>
+            </div>
+        </section>
+    </div>
+    <!-- Featured End -->
+
+    <!-- 2 Featured Start -->
+    <div class="container-fluid div1">
+        <section class="row pt-2">
+            <div class="col-md-4 col-12">
+                <h1 class="h3">Book an Event</h1>
+                <hr style="color: white;" width="340px">
+                <p class="p2">Our 10,000 square foot historical hangar is the ideal setting for receptions and special
+                    gatherings. We
+                    are experienced in handling very large-scale events, such as weddings, concerts, and galas, and can
+                    help
+                    make your occasion a huge success.</p>
+                <a href="#" class="a1 btn">Plan Event →</a>
+            </div>
+            <div class="col-md-4 col-12">
+                <br>
+                <h1 class="h3">Schedule Tour</h1>
+                <hr style="color: white;" width="340px">
+                <p class="p2">Tour our collection of classic and rare automobiles and learn about their history. Our
+                    archives contain a
+                    variety of automobile artifacts that are truly special. With over 50 different exhibits every
+                    petrolhead
+                    has something to experience at the Vintage Autohaus.</p>
+                <a href="#" class="a1 btn">Book a Tour →</a>
+            </div>
+            <div class="col-md-4 col-12">
+                <h1 class="h3">The Vintage Experience</h1>
+                <hr style="color: white;" width="360px">
+                <p class="p2">Want to experience what's its like to ride classic cars? The Vintage Experience is the way
+                    to
+                    go! This
+                    includes a 15 minute ride, with a highway cruise. Book your ride today in one of our vintage
+                    automobiles
+                    such as the the Mercedes-Benz 300SL Roadster and many more!</p>
+                <a href="#" class="a1 btn">Take a Ride →</a>
+            </div>
+        </section>
+        <div>
+            <h1 id="h4">Explore our Upcoming Events</h1>
+        </div>
+        <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'images/image-carousel-1.jpg' %}" class="img2">
+                    <div class="container">
+                        <div class="carousel-caption text-dark">
+                            <h1 id="h5">2022 Beetle Meet&Greet</h1>
+                            <p>Our annual Beetle meet & greet is here! Enjoy snacks and drinks, on the house.
+                                Thursday, 6 October, 2022.</p>
+                            <p><a class="btn btn-lg btn-outline-dark" href="#">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/image-carousel-2.jpg' %}" class="img2">
+                    <div class="container">
+                        <div class="carousel-caption text-light">
+                            <h1>'22 VelocityTouge Invitational</h1>
+                            <p>The finest selection of retro and classic Japanese automobiles from over the world, all
+                                on
+                                one floor. Brought to you by Shell®.
+                                Tuesday, 15 November, 2022.</p>
+                            <p><a class="btn btn-lg btn-outline-light" href="#">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/image-carousel-3.jpg' %}" class="img2">
+                    <div class="container">
+                        <div class="carousel-caption text-center text-light">
+                            <h1>Mercedes Heritage Gala</h1>
+                            <p>Experience the incredible heritage of Mercedes-Benz and learn about their history as a
+                                company - with exclusive Mercedes merch!
+                                Sunday, 18 December, 2022.</p>
+                            <p><a class="btn btn-lg btn-outline-light" href="#">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="material-icons text-light">west</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="material-icons text-light">east</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- 2 Featured End -->
+
+    <!-- Footer Start -->
+    <div class="div5">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-light">Home</a></li>
+                <li class="nav-item"><a href="venue.html" class="nav-link px-2 text-light">Venue</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-light">About</a></li>
+                <li class="nav-item"><a href="ticket.html" class="nav-link px-2 text-light">Ticket</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link px-2 text-light">Login</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+        </footer>
+    </div>
+    <!-- Footer End -->
+
+    <script>
+
+        $(document).ready(function () {
+            $(".slider").hover(function () {
+                $(this).css("transform", "scale(1.1)");
+            }, function () {
+                $(this).css("transform", "scale(1)");
+            });
+        })
+
+    </script>
+
+</body>
+
+</html>
